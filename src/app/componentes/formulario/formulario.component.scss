@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0.625rem;
+    border: 0.625rem solid #fee;
+
+    .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .item-2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    header {
+        .logo {
+            height: 10rem;
+
+        }
+    }
+
+    main {
+        .formulario {
+            h3 {
+                margin: 0;
+            }
+
+
+            .ng-touched.ng-invalid:not(form) {
+                border-color: red;
+                color: red;
+            }
+        }
+    }
+}
+
+
+.header_e_main {
+    background: #c4c3bd;
+    align-items: center;
+}
+
+@media (max-width: 470px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.2rem;
+
+        .item-1 {
+            padding: 0 0 0 0;
+        }
+
+        .item-2 {
+            padding: 0 0 10px 0;
+            font-size: 25px;
+        }
+    }
+}

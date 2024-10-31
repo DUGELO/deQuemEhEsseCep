@@ -1,0 +1,58 @@
+<div class="resultado">
+    <table>
+        <caption>
+            Resultado da busca por CEP
+        </caption>
+
+        <thead>
+            <th colspan="2" class="titulo">Cep: {{ cep || '"00000-000"'}}</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col">Bairro</th>
+                
+            </tr>
+            <tr>
+                <td >{{ regiao }}</td>
+                <td>{{ bairro }}</td>
+            </tr>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Logradouro</th>
+                
+            </tr>
+            <tr>
+                <td>{{ estado }}</td>
+                <td>{{ logradouro }}</td>
+                
+                
+            </tr>
+            <tr>
+                <th scope="col">UF</th>
+                <th scope="col">Complemento</th>
+                
+            </tr>
+            <tr>
+                <td>{{ uf }}</td>
+                <td>{{ complemento }}</td>
+                
+            </tr>
+            <tr>
+                <th scope="col">DDD</th>
+                <th scope="col">IBGE</th>
+            </tr>
+            <tr>
+                <td>{{ ddd }}</td>
+                <td>{{ ibge }}</td>
+            </tr>
+            <tr>
+                <th scope="col" colspan="2">Cidade</th>
+            </tr>
+            <tr>
+                <td colspan="2">{{ cidade }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
